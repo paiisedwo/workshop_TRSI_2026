@@ -59,7 +59,7 @@
 
 ### Step 1 — ทำความเข้าใจ Data Dictionary
 
-เปิดไฟล์ `datadict.csv` เพื่อดูนิยามของแต่ละ column ที่ต้องการในผลลัพธ์
+เปิดไฟล์ `readme.md` เพื่อดูนิยามของแต่ละ column ที่ต้องการในผลลัพธ์
 
 - ทำความเข้าใจแต่ละ field ว่าหมายถึงอะไร
 - สังเกต format ของข้อมูล เช่น ประเภท, รูปแบบ, และค่าที่อนุญาต
@@ -105,7 +105,7 @@
 
 ### Step 5 — Transform & Map ข้อมูล
 
-แปลง column จากรูปแบบ input ให้ตรงกับ output ตาม `datadict.csv`:
+แปลง column จากรูปแบบ input ให้ตรงกับ output ตาม `readme.md`:
 
 - **Rename** column ให้ตรงกับ header ใน `_Requirement_20261020.csv`
 - **Map ค่า** เช่น `cust_code` ต้องใส่ prefix ตามจังหวัด (`S` = สุพรรณบุรี, `K` = กาญจนบุรี)
@@ -125,7 +125,7 @@
 ## ✅ เกณฑ์การส่งงาน (Acceptance Criteria)
 
 - [ ] ข้อมูลจากทั้ง 2 จังหวัดถูก merge เข้าด้วยกันในไฟล์เดียว
-- [ ] Column ครบ **25 columns** ตาม `datadict.csv`
+- [ ] Column ครบ **25 columns** ตาม `readme.md`
 - [ ] ลำดับ column ตรงกับ `_Requirement_20261020.csv`
 - [ ] Format ของแต่ละ column ถูกต้องตาม requirement
 - [ ] `cust_code` มี prefix ถูกต้องตามจังหวัด (`K` / `S`)
@@ -142,7 +142,7 @@
 
 - ใช้ **Python (pandas)** หรือ **Excel** ก็ได้ แล้วแต่ถนัด
 - ควร document ไว้ว่าพบปัญหาอะไรบ้าง และแก้อย่างไร
-- ถ้าไม่แน่ใจ column ไหน ให้กลับไปดู `datadict.csv` เป็นหลัก
+- ถ้าไม่แน่ใจ column ไหน ให้กลับไปดู `readme.md` เป็นหลัก
 
 ---
 
